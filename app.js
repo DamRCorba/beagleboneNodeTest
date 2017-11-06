@@ -27,12 +27,12 @@ app.post("/apagar",function(req,res){
 
 app.post("/blink",function(req,res){
 	Intervalo = setInterval(blink, 500);
-	res.render("botoncito");
+	res.render("parpadear");
 });
 
 app.post("/stop",function(req,res){
 	 clearInterval(Intervalo);
-	 res.render("botoncito");
+	 res.redirect("/botoncito");
 });
 
 function  blink(){
