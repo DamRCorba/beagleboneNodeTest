@@ -38,11 +38,15 @@ app.post("/stop",function(req,res){
 function  blink(){
 	if(!state)
 		{
+			b.pinMode(led,'out');
 			b.digitalWrite(led,1);
+			console.log("prende");
 			state = 1;
 		}
 		else{
+			b.pinMode(led,'out');
 			b.digitalWrite(led,0);
+			console.log("apaga");
 			state = 0;
 		}
 }
