@@ -1,0 +1,15 @@
+{
+  "name": "myServer",
+  "version": "0.0.0",
+  "description": "Prueba sobre Beagle",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Damian Corbalan",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "express": "~4.13.4",
+    "jade": "~1.11.0"
+  }
+}
