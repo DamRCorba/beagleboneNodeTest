@@ -32,7 +32,11 @@ app.post("/blink",function(req,res){
 
 app.post("/stop",function(req,res){
 	 clearInterval(Intervalo);
-	 res.redirect("/botoncito");
+	 res.redirect("/");
+});
+
+app.post("/volver",function (req,res) {
+	 res.redirect("/");
 });
 
 function  blink(){
